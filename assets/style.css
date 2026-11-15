@@ -116,3 +116,4 @@ footer{color:var(--muted);font-size:13px;padding:28px 16px 12px;text-align:cente
 .kit{display:flex;flex-direction:column;gap:10px;background:#fdf6ec;border:1px solid #efdcc0;border-radius:12px;padding:14px;margin:22px 0 4px}
 .kit p{margin:4px 0 0;color:var(--muted);font-size:14.5px}
 .kit .btn{align-self:flex-start}
+.notice.error{background:#fdecea;color:#8a1c1c}
