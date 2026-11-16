@@ -17,27 +17,28 @@
 
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap brandrow">
   <a class="logo" href="../" aria-label="Home"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M5 18a7 7 0 0 1 14 0"/><path d="M12 8V6"/><path d="M10 6h4"/></svg></a>
   <a class="brand" href="../">Bring Your Caterer<small>DFW venues that allow outside catering</small></a>
   <a class="langtoggle" href="../es/cotizaciones/" hreflang="es" lang="es">Español</a>
 </div></header>
-<main class="wrap"><section class="page"><h1>Get free catering quotes</h1>
+<main class="wrap" id="main"><section class="page"><h1>Get free catering quotes</h1>
 <p>Tell us about your event and up to 3 DFW caterers who work at BYO-catering venues will send you a quote. Free, no obligation.</p>
 <form id="leadform" data-endpoint="https://dwpnqxpmvqwdfnbrsvud.supabase.co/rest/v1/form_submissions" data-key="sb_publishable_c0AsIwtwpAQ-UFyj4vbTgA_mrB0vnd6" data-site="byc" data-type="quote" data-lang="en"><div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label>Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="form" value="catering-quote"><input type="hidden" name="lang" value="en"><input type="hidden" name="venue" id="venueField">
   <div class="field"><label for="f-event">Event</label><select id="f-event" name="event" required><option>Quinceañera</option><option>Wedding</option><option>Birthday</option><option>Baby or bridal shower</option><option>Graduation</option><option>Corporate event</option><option>Other</option></select></div>
   <div class="grid2"><div class="field"><label for="f-date">Date</label><input id="f-date" name="date" type="date" required></div>
   <div class="field"><label for="f-guests">Guests</label><input id="f-guests" name="guests" type="number" min="10" max="2000" inputmode="numeric" required></div></div>
-  <div class="field"><label for="f-city">City or venue</label><input id="f-city" name="city" required></div>
+  <div class="field"><label for="f-city">City or venue</label><input type="text" id="f-city" name="city" required></div>
   <div class="field"><label for="f-food">Food style</label><select id="f-food" name="cuisine"><option>Mexican / Tex-Mex</option><option>Taquero / taco bar</option><option>BBQ</option><option>Italian</option><option>Indian / South Asian</option><option>Southern / soul food</option><option>Other</option></select></div>
   <div class="field"><label for="f-budget">Food budget per person (optional)</label><select id="f-budget" name="budget"><option value="">—</option><option>$10–20</option><option>$20–35</option><option>$35–60</option><option>$60+</option></select></div>
-  <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+  <div class="field"><label for="f-name">Your name</label><input type="text" id="f-name" name="name" autocomplete="name" required></div>
   <div class="grid2"><div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
   <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div></div>
   <label class="consent"><input type="checkbox" name="consent" required> I agree to be contacted about my event by up to 3 caterers.</label>
   <button class="btn primary wide" type="submit">Send my request</button>
-  <div class="notice" id="leadok" hidden></div>
+  <div class="notice" id="leadok" role="status" aria-live="polite" hidden></div>
 </form>
 <p class="fine">We share your request only with the caterers who quote it. See our <a href="../privacy/">privacy policy</a>.</p>
 <h2>Caterers: get these leads</h2>
